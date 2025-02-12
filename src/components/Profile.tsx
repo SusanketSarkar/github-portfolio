@@ -5,6 +5,7 @@ import useMediaQuery from "@/hook/useMediaQuery";
 
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 import {
     Card,
@@ -15,21 +16,25 @@ import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 
 const socials = [
     {
+        name: "Email",
+        link: "mailto:susanketsarkar1140@gmail.com",
+        icon: <MdEmail className="size-4" />
+    },
+    {
         name: "Github",
-        link: "https://github.com/achris-alonzo30",
+        link: "https://github.com/SusanketSarkar",
         icon: <FaGithub className="size-4" />
     },
     {
         name: "LinkedIn",
-        link: "https://linkedin.com/in/lonzochris",
+        link: "https://www.linkedin.com/in/susanket-sarkar-b30736228/",
         icon: <FaLinkedin className="size-4" />
     },
     {
         name: "X (Twitter)",
-        link: "https://x.com/lonz_chris",
+        link: "https://x.com/positivlyskewed",
         icon: <FaXTwitter className="size-4" />
     }
-    // TODO: Add more socials here
 ]
 
 export const Profile = () => {
@@ -50,9 +55,9 @@ export const Profile = () => {
                                 className="rounded-full size-12 md:w-full h-auto object-cover border-2"
                             />
                             <div className="flex flex-col items-start justify-center">
-                                <h1 className="font-bold md:mt-4 text-xl md:text-2xl">Chris Lonzo</h1>
+                                <h1 className="font-bold md:mt-4 text-xl md:text-2xl">Susanket Sarkar</h1>
                                 <p className="text-sm md:text-base text-muted-foreground">
-                                    Solopreneur Developer
+                                    Data Scientist
                                 </p>
                             </div>
                         </div>
@@ -60,7 +65,7 @@ export const Profile = () => {
                     </div>
 
                     <p className="mt-2 text-start text-sm text-muted-foreground">
-                        I am a software engineer with a passion for building products that help people live better lives.
+                    I am an Engineer who is quite enthusiastic about the data behind product decisions and I love to delve deeper into machine learning and deep learning problems.
                     </p>
                     <Button className="mt-4 w-full" asChild>
                         {/* TODO: Add resume */}

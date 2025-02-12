@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 // TODO: Update skills
-const skills = ["TypeScript", "JavaScript", "Python", "Java", "C#", "C++", "C", "SQL", "HTML", "CSS", "TailwindCSS", "NextJS", "ReactJS", "NodeJS", "ExpressJS", "MongoDB", "PostgreSQL", "Git", "Docker", "Kubernetes", "Linux", "Windows", "MacOS"]
+const skills = ["Python", "SQL", "R", "C/C++", "Numpy", "Pandas", "AWS", "EC2", "S3", "Sagemaker", "GIT", "Docker", "Pytorch", "TensorFlow", "Keras", "PowerBI", "Tableau", "GIS"]
 
 export const Skills = () => {
     return (
