@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/card";
 import { skillVariants } from '@/components/constants';
 import { Badge } from "@/components/ui/badge";
-// TODO: Update skills
+
 const skills = ["Python", "SQL", "R", "C/C++", "Numpy", "Pandas", "AWS", "GIT", "Docker", "Pytorch", "TensorFlow", "Keras", "PowerBI", "Tableau", "GIS"]
 
 export const Skills = () => {

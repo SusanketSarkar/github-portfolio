@@ -42,8 +42,9 @@ const techColors = {
 export const Projects = () => {
     return (
         <>
+            <br/>
             <h2 className="text-xl font-bold mb-4">
-                Featured Projects
+                Projects and Research Work
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 {projects.map((p, i) => (

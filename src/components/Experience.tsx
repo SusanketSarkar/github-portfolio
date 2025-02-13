@@ -14,7 +14,7 @@ const jobs = [
     {
         role: "Data Scientist I",
         company: "Aereo",
-        logo: "/aereo.svg", // Replace with actual logo path
+        logo: "/aereo.jpg", // Replace with actual logo path
         duration: "May 2024 - Present · 10 mos",
         description: [
             "Developed a path-finding and generation algorithm for haul roads in mining sites using geospatial aerial imagery.",
@@ -29,7 +29,7 @@ const jobs = [
     {
         role: "Data Science Intern",
         company: "Aereo",
-        logo: "/logos/aereo.png",
+        logo: "/aereo.jpg",
         duration: "May 2023 - July 2023 · 3 mo",
         location: "Bengaluru, Karnataka, India · On-site",
         description: [

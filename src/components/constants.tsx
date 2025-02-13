@@ -16,5 +16,5 @@ export const skillVariants: { [key: string]: string } = {
     "R": "bg-green-900 text-white",
     "C/C++": "bg-blue-300 text-white",
     // Default color for other skills
-    "default": "bg-gray-300 text-black"
+    "default": "bg-gray-800 text-white"
 };
