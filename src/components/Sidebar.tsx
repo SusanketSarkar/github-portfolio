@@ -14,7 +14,7 @@ export const Sidebar = () => {
       </div>
 
       {/* Social Icons - Positioned to the Side */}
-      <div className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 space-y-4">
+      <div className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 space-y-2">
         <SocialIcons />
       </div>
     </div>
