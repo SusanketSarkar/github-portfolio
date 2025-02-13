@@ -1,5 +1,6 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
+import { useSkillFilter } from "@/context/SkillFilterContext";
 
 import { cn } from "@/lib/utils"
 
@@ -23,14 +24,34 @@ const badgeVariants = cva(
   }
 )
 
+
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof badgeVariants> {}
-
-function Badge({ className, variant, ...props }: BadgeProps) {
-  return (
-    <div className={cn(badgeVariants({ variant }), className)} {...props} />
-  )
+    VariantProps<typeof badgeVariants> {
+  skill: string; // Add skill prop
 }
 
-export { Badge, badgeVariants }
+function Badge({ className, variant, skill, ...props }: BadgeProps) {
+  const { selectedSkill, setSelectedSkill } = useSkillFilter();
+
+  const handleClick = () => {
+    setSelectedSkill(selectedSkill === skill ? null : skill);
+  };
+
+  return (
+    <div
+      onClick={handleClick}
+      className={cn(
+        badgeVariants({ variant }),
+        selectedSkill === skill ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700",
+        "cursor-pointer transition duration-200",
+        className
+      )}
+      {...props}
+    >
+      {skill}
+    </div>
+  );
+}
+
+export { Badge, badgeVariants };

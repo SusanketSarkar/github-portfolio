@@ -29,11 +29,6 @@ const socials = [
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/susanket-sarkar-b30736228/",
         icon: <FaLinkedin className="size-4" />
-    },
-    {
-        name: "X (Twitter)",
-        link: "https://x.com/positivlyskewed",
-        icon: <FaXTwitter className="size-4" />
     }
 ]
 
