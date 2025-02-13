@@ -6,6 +6,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import { JobImages } from "@/components/JobImages";
 
+import { skillVariants } from "./constants";
+
+import { Badge } from "@/components/ui/badge";
+
 const jobs = [
     {
         role: "Data Scientist I",
@@ -163,9 +167,12 @@ export const Experience = () => {
                                 {/* Skills Section */}
                                 <div className="flex flex-wrap gap-2 mt-3">
                                     {j.skills.map((skill, index) => (
-                                        <span key={index} className="px-3 py-1 text-sm bg-gray-800 text-white rounded-full">
+                                        <Badge 
+                                            key={index} 
+                                            className={`${skillVariants[skill] || skillVariants["default"]}`}
+                                        >
                                             {skill}
-                                        </span>
+                                        </Badge>
                                     ))}
                                 </div>
                                 {/* Job Images */}
