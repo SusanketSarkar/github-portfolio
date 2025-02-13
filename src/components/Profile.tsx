@@ -14,23 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 
-const socials = [
-    {
-        name: "Email",
-        link: "mailto:susanketsarkar1140@gmail.com",
-        icon: <MdEmail className="size-4" />
-    },
-    {
-        name: "Github",
-        link: "https://github.com/SusanketSarkar",
-        icon: <FaGithub className="size-4" />
-    },
-    {
-        name: "LinkedIn",
-        link: "https://www.linkedin.com/in/susanket-sarkar-b30736228/",
-        icon: <FaLinkedin className="size-4" />
-    }
-]
+
 
 export const Profile = () => {
     const isDesktopOrLaptop = useMediaQuery("(min-width: 1224px)");
@@ -73,26 +57,6 @@ export const Profile = () => {
                             CONTACT ME
                         </Link>
                     </Button>
-                    <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
-                        {socials.map((s, i) => {
-                            const parts = s.link.split("/");
-                            const username = parts[parts.length - 1];
-
-                            return (
-                                <Link
-                                    key={i}
-                                    href={s.link}
-                                    target="_blank"
-                                    className="cursor-pointer flex items-center gap-2 group"
-                                >
-                                    {s.icon}
-                                    <span className="text-sm text-muted-foreground group-hover:text-primary transition-color duration-200 ease-linear">
-                                        /{username}
-                                    </span>
-                                </Link>
-                            )
-                        })}
-                    </div>
                 </div>
             </CardContent>
         </Card>
