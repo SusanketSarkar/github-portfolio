@@ -74,3 +74,16 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+/* Ensure theme changes are instant */
+@layer utilities {
+  .theme-transition-none {
+    transition-property: transform, opacity, scale, filter, box-shadow !important;
+    transition-duration: 0.3s !important;
+  }
+  
+  .theme-transition-none,
+  .theme-transition-none * {
+    transition-property: transform, opacity, scale, filter, box-shadow !important;
+  }
+}

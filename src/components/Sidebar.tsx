@@ -1,7 +1,4 @@
-import { Skills } from "./Skills";
 import { Profile } from "./Profile";
-import { Experience } from "./Experience";
-
 import { SocialIcons } from "@/components/SocialIcons";
 
 export const Sidebar = () => {

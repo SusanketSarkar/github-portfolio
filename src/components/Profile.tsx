@@ -1,23 +1,15 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import useMediaQuery from "@/hook/useMediaQuery";
-
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { SiKaggle } from "react-icons/si";
 
 import {
   Card,
   CardContent,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import ThemeSwitcher from "@/components/ui/ThemeSwitcher";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 export const Profile = () => {
-  const isDesktopOrLaptop = useMediaQuery("(min-width: 1224px)");
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   return (
@@ -36,14 +28,13 @@ export const Profile = () => {
               />
               <div className="flex flex-col items-start justify-center">
                 <h1 className="font-bold md:mt-4 text-xl md:text-2xl">
-                  Hi! I'm Susanket
+                  Hi! I&apos;m Susanket
                 </h1>
                 {/* <p className="text-sm md:text-base text-muted-foreground">
                   Data Scientist
                 </p> */}
               </div>
             </div>
-            {!isDesktopOrLaptop && <ThemeSwitcher />}
           </div>
 
           <p className="mt-2 text-start text-sm text-muted-foreground">
@@ -53,7 +44,7 @@ export const Profile = () => {
           {/* Resume Button opens Modal */}
           <Dialog open={isResumeOpen} onOpenChange={setIsResumeOpen}>
         <DialogTrigger asChild>
-            <Button size="small" className="mt-4 w-full font-semibold uppercase">
+            <Button size="sm" className="mt-4 w-full font-semibold uppercase">
             Resume
             </Button>
         </DialogTrigger>
@@ -82,7 +73,7 @@ export const Profile = () => {
         </DialogContent>
         </Dialog>
 
-          {/* Socials
+          {/* Socials - commented out for now
           <div className="flex gap-4 mt-4">
             <Link href="https://github.com/yourusername" target="_blank">
               <FaGithub className="text-2xl" />

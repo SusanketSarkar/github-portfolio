@@ -30,16 +30,27 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
         }
     }, [prefersDark]);
 
+    // Apply theme immediately when theme changes
     useEffect(() => {
-        if (theme === 'dark' || (theme === 'inherit' && prefersDark)) {
+        applyTheme(theme, prefersDark);
+    }, [theme, prefersDark]);
+
+    const applyTheme = (currentTheme: ThemeType, systemPrefersDark: boolean) => {
+        if (currentTheme === 'dark' || (currentTheme === 'inherit' && systemPrefersDark)) {
             document.documentElement.classList.add('dark');
         } else {
             document.documentElement.classList.remove('dark');
         }
-    }, [theme, prefersDark]);
+    };
 
     const changeTheme = (newTheme: ThemeType) => {
+        // Apply theme immediately to DOM
+        applyTheme(newTheme, prefersDark);
+        
+        // Update state
         setTheme(newTheme);
+        
+        // Update localStorage
         if (newTheme !== 'inherit') {
             window.localStorage.setItem('x-theme', newTheme);
         } else {

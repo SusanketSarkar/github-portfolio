@@ -5,7 +5,7 @@ import { useSkillFilter } from "@/context/SkillFilterContext";
 import { cn } from "@/lib/utils"
 
 const badgeVariants = cva(
-  "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+  "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
   {
     variants: {
       variant: {
@@ -38,13 +38,17 @@ function Badge({ className, variant, skill, ...props }: BadgeProps) {
     setSelectedSkill(selectedSkill === skill ? null : skill);
   };
 
+  const isSelected = selectedSkill === skill;
+
   return (
     <div
       onClick={handleClick}
       className={cn(
         badgeVariants({ variant }),
-        selectedSkill === skill ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700",
-        "cursor-pointer transition duration-200",
+        isSelected 
+          ? "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white scale-110 shadow-lg ring-4 ring-opacity-50 ring-blue-300" 
+          : "bg-gray-200 text-gray-700 hover:bg-gray-300 hover:scale-105",
+        "cursor-pointer transition-all duration-300 ease-in-out transform",
         className
       )}
       {...props}

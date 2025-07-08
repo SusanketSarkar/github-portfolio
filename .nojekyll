@@ -1,0 +1,39 @@
+```
+
+## 5. Repository Settings
+
+After pushing your code, you'll need to configure GitHub Pages in your repository settings:
+
+1. Go to your repository on GitHub
+2. Navigate to **Settings** > **Pages**
+3. Under **Source**, select **Deploy from a branch**
+4. Choose **gh-pages** branch and **/ (root)** folder
+5. Click **Save**
+
+## 6. Push Your Changes
+
+```bash
+git add .
+git commit -m "Configure GitHub Pages deployment"
+git push origin main
+```
+
+## 7. Access Your Site
+
+After the GitHub Action completes successfully, your site will be available at:
+`https://yourusername.github.io/portfolio`
+
+## Important Notes:
+
+1. **Repository Name**: Make sure the `basePath` and `assetPrefix` in `next.config.ts` match your repository name
+2. **Branch**: The workflow is set to deploy from the `main` branch - adjust if you use a different default branch
+3. **Build Time**: The first deployment might take a few minutes
+4. **Custom Domain**: If you want to use a custom domain, add a `CNAME` file in the `public` directory
+
+## Troubleshooting:
+
+- If images don't load properly, ensure all image paths are relative and the `images.unoptimized: true` setting is in your config
+- Check the Actions tab in your repository to see if the deployment succeeded
+- Make sure your repository is public, or you have GitHub Pro/Team for private repository Pages
+
+The deployment will automatically trigger whenever you push to the main branch, keeping your site updated with your latest changes!
