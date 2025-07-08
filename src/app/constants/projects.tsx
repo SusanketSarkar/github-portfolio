@@ -2,25 +2,13 @@ export const projects = [
     {
         title: "Optimising Latent Representations in VAE",
         description: "Investigated the effectiveness of constrained encoder representations in Variational Auto-encoders (VAE) to extract non-trivial, high-value features, addressing limitations of reconstruction-based objectives prone to trivial solutions",
-        tech: ["Python", "Variational AutoEncoders", "Deep Learning", "LSTM", "Tensorflow"],
+        tech: ["Deep Learning", "Python", "Variational AutoEncoders", "LSTM", "PyTorch", "Time Series"],
         link: "project_1.pdf",
     },
     {
-        title: "Task Management App",
-        description: "A productivity app built with React Native and Firebase",
-        tech: ["React Native", "Firebase"],
+        title: "Explainable Deep Learning for Heart Sound Analysis",
+        description: "Explored explainable deep learning architectures for heart sound classification, focusing on model transparency.",
+        tech: ["Deep Learning", "PyTorch", "CNN", "Python"],
         link: "#",
-    },
-    {
-        title: "Data Visualization Dashboard",
-        description: "An interactive dashboard using D3.js and Vue.js",
-        tech: ["Vue.js", "D3.js"],
-        link: "#",
-    },
-    {
-        title: "AI Chatbot",
-        description: "A machine learning powered chatbot using Python and TensorFlow",
-        tech: ["Python", "TensorFlow"],
-        link: "#",
-    },
+    }
 ]

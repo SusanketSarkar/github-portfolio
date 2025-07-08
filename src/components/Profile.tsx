@@ -27,20 +27,20 @@ export const Profile = () => {
           <div className="w-full flex flex-row justify-between items-top">
             <div className="flex flex-row md:flex-col items-center md:items-start w-full gap-4">
               <Image
-                width={150}
-                height={150}
+                width={100}
+                height={100}
                 quality={100}
                 src="/avatar.jpg"
                 alt="Profile Picture"
-                className="rounded-full size-12 md:w-full h-auto object-cover border-2"
+                className="rounded-full size-6 md:w-40 h-40 object-cover border-2"
               />
               <div className="flex flex-col items-start justify-center">
                 <h1 className="font-bold md:mt-4 text-xl md:text-2xl">
-                  Susanket Sarkar
+                  Hi! I'm Susanket
                 </h1>
-                <p className="text-sm md:text-base text-muted-foreground">
+                {/* <p className="text-sm md:text-base text-muted-foreground">
                   Data Scientist
-                </p>
+                </p> */}
               </div>
             </div>
             {!isDesktopOrLaptop && <ThemeSwitcher />}
@@ -53,7 +53,7 @@ export const Profile = () => {
           {/* Resume Button opens Modal */}
           <Dialog open={isResumeOpen} onOpenChange={setIsResumeOpen}>
         <DialogTrigger asChild>
-            <Button className="mt-4 w-full font-semibold uppercase">
+            <Button size="small" className="mt-4 w-full font-semibold uppercase">
             Resume
             </Button>
         </DialogTrigger>
@@ -62,10 +62,10 @@ export const Profile = () => {
             <DialogTitle>Resume</DialogTitle>
             </DialogHeader>
             
-            {/* Display Resume Image */}
+            {/* Display Resume PDF */}
             <div className="flex justify-center">
             <iframe
-                src="/resume.png"
+                src="/resume.pdf"
                 className="w-full h-[600px] object-contain"
                 style={{ objectFit: "contain" }}
               />

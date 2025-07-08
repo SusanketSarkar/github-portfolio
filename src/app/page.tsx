@@ -7,19 +7,23 @@ import { Skills } from "@/components/Skills";
 export default function Home() {
   return (
     <div className="bg-background min-h-screen">
-      <div className="container max-w-screen-lg mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Sidebar Section (Profile + Projects) */}
-          <div className="md:col-span-1">
+      <div className="container max-w-screen-xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-11 gap-2">
+          {/* First Column - Profile + Skills */}
+          <div className="lg:col-span-3">
             <Sidebar />
-            <Projects /> {/* Moved Projects under Sidebar */}
+            <Skills />
           </div>
 
-          {/* Main Section (Skills + Experience) */}
-          <main className="md:col-span-2">
-            <Skills />
+          {/* Second Column - Experience */}
+          <div className="lg:col-span-4">
             <Experience />
-          </main>
+          </div>
+
+          {/* Third Column - Projects */}
+          <div className="lg:col-span-4">
+            <Projects />
+          </div>
         </div>
       </div>
     </div>

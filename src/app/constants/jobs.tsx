@@ -10,9 +10,9 @@ export const jobs = [
             "Deployed the solution, reducing path planning time by 54% and increasing accuracy by 27%, leading to a 12% increase in project adoption across clients.",
             "Integrated a feature to calculate the optimal route for dumper vehicles, incorporating key metrics such as travel time and slope analysis, resulting in a further 5% increase in project adoption."
         ],
-        link: "https://aereo.com", // Replace with actual company website
-        images: [], // Add project screenshots or visuals if available
-        skills: ["Python", "Machine Learning", "Deep Learning", "CI/CD", "Docker", "GIS", "Data Structures", "Weights and Biases", "Client Interaction"],
+        link: "https://aereo.com", 
+        images: [], 
+        skills: ["AWS", "Computer Vision", "Python", "Machine Learning", "Deep Learning", "CI/CD", "Docker", "GIS", "Data Structures", "Weights and Biases", "Client Interaction"],
     },
     {
         role: "Data Science Intern",
@@ -28,12 +28,12 @@ export const jobs = [
         ],
         link: "https://aereo.com", // Replace with actual company website
         images: [], // Add project screenshots or visuals if available
-        skills: ["Python", "SQL", "MFCC", "Deep Learning"],
+        skills: ["Python", "SQL", "Deep Learning", "Computer Vision", "CI/CD", "GIS", ],
     },
     {
         role: "Data Scientist",
         company: "Vitt.AI",
-        logo: "/logos/vittai.png",
+        logo: "/vittai.png",
         duration: "Jan 2023 - Mar 2023 · 3 mos",
         location: "Bengaluru, Karnataka, India · Remote",
         description: [
@@ -43,14 +43,14 @@ export const jobs = [
             "Trained a deep learning model on the audio data, achieving a word error rate (WER) of less than 19 for transcribing and translating the conversations into English.",
             "Enhanced the efficiency of the pipeline by 15% by automating the transcription and translation process, saving the company 27 hours of manual work previously required for language processing tasks."
         ],
-        link: "https://aereo.com", // Replace with actual company website
+        link: "https://vitt.ai", // Replace with actual company website
         images: [], // Add project screenshots or visuals if available
         skills: ["Python", "Apache Spark", "MFCC", "Deep Learning"],
     },
     {
         role: "Data Analyst",
         company: "The KinCare",
-        logo: "/logos/kincare.png",
+        logo: "/kincare.jpeg",
         duration: "Nov 2022 - Jan 2023 · 3 mos",
         location: "Bengaluru, Karnataka, India · Remote",
         description: [
@@ -61,14 +61,14 @@ export const jobs = [
             "Planned and presented data models with Power BI and insights to more than 40 non-technical stakeholders, effectively communicating complex concepts and influencing strategic decisions.",
             "Additionally, automated 10+ manual processes using Python scripts, reducing data analysis time by 52%."
         ],
-        link: "https://aereo.com", // Replace with actual company website
+        link: "https://kincare.com", // Replace with actual company website
         images: [], // Add project screenshots or visuals if available
         skills: ["Python", "Apache Spark", "MFCC", "Deep Learning"],
     },
     {
         role: "Machine Learning Engineer",
         company: "FitBuddy",
-        logo: "/logos/fitbuddy.png",
+        logo: "/fitbuddy.jpeg",
         duration: "Sep 2022 - Nov 2022 · 3 mos",
         location: "Delhi, India · Remote",
         description: [
@@ -77,40 +77,40 @@ export const jobs = [
             "Optimized the existing codebase, enhancing the accuracy of exercise detection while extending functionality to include yoga poses, resulting in an impressive F1 score of 0.87 on newly implemented yoga positions.",
             "Implemented the feature into the production environment, leading to a remarkable 20% increase in application download rates due to the enhanced user experience and accurate exercise pose detection."
         ],
-        link: "https://aereo.com", // Replace with actual company website
+        link: "https://fitbuddy.com", // Replace with actual company website
         images: [], // Add project screenshots or visuals if available
         skills: ["Python", "Apache Spark", "MFCC", "Deep Learning"],
     },
     {
         role: "Data Scientist",
         company: "Shortlyst AI",
-        logo: "/logos/shortlystai.png",
+        logo: "/sh.png",
         duration: "Sep 2022 - Oct 2022 · 2 mos",
         location: "Remote",
         description: [],
-        link: "https://aereo.com", // Replace with actual company website
+        link: "https://shortlyst.ai", // Replace with actual company website
         images: [], // Add project screenshots or visuals if available
         skills: ["Python", "Apache Spark", "MFCC", "Deep Learning"],
     },
     {
         role: "Deep Learning Engineer",
         company: "TechyAI",
-        logo: "/logos/techyai.png",
+        logo: "/ta.jpeg",
         duration: "Aug 2022 - Sep 2022 · 2 mos",
         location: "Remote",
         description: [],
-        link: "https://aereo.com", // Replace with actual company website
+        link: "https://techy.ai", // Replace with actual company website
         images: [], // Add project screenshots or visuals if available
         skills: ["Python", "Apache Spark", "MFCC", "Deep Learning"],
     },
     {
         role: "Algorithm Developer",
         company: "REACH Technologies",
-        logo: "/logos/reach.png",
+        logo: "/rt.jpeg",
         duration: "Jun 2022 - Jul 2022 · 2 mos",
         location: "Remote",
         description: [],
-        link: "https://aereo.com", // Replace with actual company website
+        link: "https://reach.com", // Replace with actual company website
         images: [], // Add project screenshots or visuals if available
         skills: ["Python", "Apache Spark", "MFCC", "Deep Learning"],
     },
