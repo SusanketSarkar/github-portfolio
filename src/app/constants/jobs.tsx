@@ -2,7 +2,7 @@ export const jobs = [
     {
         role: "Data Scientist I",
         company: "Aereo",
-        logo: "/aereo.jpg", // Replace with actual logo path
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/aereo.jpg", // Replace with actual logo path
         duration: "May 2024 - Present · 10 mos",
         description: [
             "Developed a path-finding and generation algorithm for haul roads in mining sites using geospatial aerial imagery.",
@@ -17,7 +17,7 @@ export const jobs = [
     {
         role: "Data Science Intern",
         company: "Aereo",
-        logo: "/aereo.jpg",
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/aereo.jpg",
         duration: "May 2023 - July 2023 · 3 mo",
         location: "Bengaluru, Karnataka, India · On-site",
         description: [
@@ -33,7 +33,7 @@ export const jobs = [
     {
         role: "Data Scientist",
         company: "Vitt.AI",
-        logo: "/vittai.png",
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/vittai.png",
         duration: "Jan 2023 - Mar 2023 · 3 mos",
         location: "Bengaluru, Karnataka, India · Remote",
         description: [
@@ -50,7 +50,7 @@ export const jobs = [
     {
         role: "Data Analyst",
         company: "The KinCare",
-        logo: "/kincare.jpeg",
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/kincare.jpeg",
         duration: "Nov 2022 - Jan 2023 · 3 mos",
         location: "Bengaluru, Karnataka, India · Remote",
         description: [
@@ -68,7 +68,7 @@ export const jobs = [
     {
         role: "Machine Learning Engineer",
         company: "FitBuddy",
-        logo: "/fitbuddy.jpeg",
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/fitbuddy.jpeg",
         duration: "Sep 2022 - Nov 2022 · 3 mos",
         location: "Delhi, India · Remote",
         description: [
@@ -84,7 +84,7 @@ export const jobs = [
     {
         role: "Data Scientist",
         company: "Shortlyst AI",
-        logo: "/sh.png",
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/sh.png",
         duration: "Sep 2022 - Oct 2022 · 2 mos",
         location: "Remote",
         description: [],
@@ -95,7 +95,7 @@ export const jobs = [
     {
         role: "Deep Learning Engineer",
         company: "TechyAI",
-        logo: "/ta.jpeg",
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/ta.jpeg",
         duration: "Aug 2022 - Sep 2022 · 2 mos",
         location: "Remote",
         description: [],
@@ -106,7 +106,7 @@ export const jobs = [
     {
         role: "Algorithm Developer",
         company: "REACH Technologies",
-        logo: "/rt.jpeg",
+        logo: "https://github.com/SusanketSarkar/github-portfolio/blob/main/public/rt.jpeg",
         duration: "Jun 2022 - Jul 2022 · 2 mos",
         location: "Remote",
         description: [],
