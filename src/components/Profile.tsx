@@ -22,7 +22,7 @@ export const Profile = () => {
                 width={100}
                 height={100}
                 quality={100}
-                src="/avatar.jpg"
+                src="https://github.com/SusanketSarkar/github-portfolio/blob/main/public/avatar.jpg"
                 alt="Profile Picture"
                 className="rounded-full size-6 md:w-40 h-40 object-cover border-2"
               />
@@ -64,7 +64,7 @@ export const Profile = () => {
 
             {/* Export Button */}
             <div className="flex justify-end mt-4">
-            <a href="/resume.pdf" download="Susanket_Sarkar_Resume.pdf">
+            <a href="https://github.com/SusanketSarkar/github-portfolio/blob/main/public/resume.pdf" download="Susanket_Sarkar_Resume.pdf">
                 <Button className="font-semibold uppercase">
                 Export PDF
                 </Button>
